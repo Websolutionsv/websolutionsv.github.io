@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 0px;
+}
+
+body{
+    background-image: url(../img/FONDO.webp);
+}
+
+header{
+	height: 200%;
+	background-color: #CB5C5C;
+}
+
+img#Logo{
+	height: 10%;
+	width: 10%;
+	display: block;
+ 	margin: 0px auto;
+}
+
+h1#Nombre{
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Radio Canada', sans-serif;
+}
+
+h3#Slogan{
+	text-align: center;
+	font-size: 30px;
+}
+
+body{
+	background-color: lightgray;
+}
+
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+} 
+
+nav li{
+    display:inline-block;
+    width:20%;
+    padding: 1%;
+    background-color:#000;
+    border:1px solid white;
+    text-align:center;
+    color:#fff;
+}
+nav li:hover{
+    background-color:gray;
+    color:#000;
+    transition: 0.5s;
+
+}

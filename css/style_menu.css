@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background: #CB5C5C;
+    height: 70px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 80px;
+    width: 80px;
+    margin-left: 30px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #3f0705;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+/** Acerca de Nosotros **/
+.acerca-de{
+    width: 100%;
+    margin-top: 120px; 
+}
+.acerca-de .info-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.acerca-de .info-container h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom:20px ;
+}
+.acerca-de .info-container p{
+     text-align: justify;
+     font-size: 17px;
+     color: var(--black);
+     line-height: 35px;
+     margin: 10px 0px;
+}
+
+ .designed__illustration{
+     height: 350px;
+     background-repeat: no-repeat; 
+     background-position: center;
+     background-size: contain;
+     background-image: url(../img/Mision_vision.webp);
+ }
+ .designed__texts .designed__about .designed__subtitle h3{
+     font-size: 1.3rem;
+     text-align: justify;
+     color: #ff2e63;
+ }
+ .designed__texts  .designed__subtitle .designed__paragraph{
+    font-size: 1rem;
+    text-align: justify;
+    
+}
+ .designed__illustration{
+     position: 80px;
+     left: 52%;
+     height: auto;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     background-size: contain;
+ }
+ 
+ .designed__container{
+     padding:100px 0;
+     display: flex;
+     flex-direction: row;
+ }
+ 
+ .designed__illustration{
+     width: 50%;
+ }
+ 
+ 
+ .designed__texts{
+     width: 45%;
+ }
+ 
+ 
+ .designed__subtitle{
+     font-size: 1.3rem;
+     text-align: center;
+     color: var(--red);
+ }
+ 
+ .info-container{
+     border: #3f0705;
+ }
+ 
+ /** Acerca de nosotros **/
+hr{
+    background-color: #2c3e50;
+    width: 80%;
+    margin-left: 10%;
+    
+
+}
+ /** Quienes somos**/
+ .quienes-somos{
+     margin: 10%;
+     border-color: #CB5C5C;
+     margin-bottom: 0;
+ }
+
+.Info h1{
+
+        font-size: 50px;
+        font-weight: 400;
+        color: var(--black);
+        text-align: center;
+        margin-bottom:40px ;
+        
+}
+
+.Info p{
+    letter-spacing: 2px;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+ /** Expertos **/
+ .contenedor h2{
+    margin-top: 2%;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    text-align: center;
+}
+.contenedor hr{
+    background:#fff;
+   width: 50%;
+   height: 3px;
+   margin: 10px auto;
+}
+.experts{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor .project-sub h1{
+    color: var(--black);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+  
+}
+
+
+.cont-expert{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.cont-expert img{
+    width: 60%;
+    height: 70%;
+    display: block;
+    margin:0 auto;
+   
+}
+
+.n-expert{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+/*Expertos*/
+/*Footer*/
+footer{
+background-color: #CB5C5C;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
